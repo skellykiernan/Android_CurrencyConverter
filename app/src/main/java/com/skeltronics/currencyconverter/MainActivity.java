@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    double dollarToEuroRate = 0.91;
+    private double dollarToEuroRate = 0.91;
 
     public void convertCurrency(View view) {
         Log.i("Convert", "Start Converting");
