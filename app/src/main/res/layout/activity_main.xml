@@ -10,25 +10,26 @@
         android:id="@+id/runningMoneyImageView"
         android:layout_width="0dp"
         android:layout_height="238dp"
+        android:contentDescription="image showing money running form dource to destination"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.496"
+        app:layout_constraintVertical_bias="0.542"
         app:srcCompat="@mipmap/running_money" />
 
     <Button
         android:id="@+id/convertButton"
-        android:layout_width="368dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="convertCurrency"
         android:text="Convert"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/runningMoneyImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/runningMoneyImageView"
+        android:layout_marginTop="37dp" />
 
     <EditText
         android:id="@+id/enterDollarNumber"
@@ -39,5 +40,8 @@
         android:hint="Enter $ Value"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/runningMoneyImageView"
-        tools:layout_editor_absoluteX="85dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
